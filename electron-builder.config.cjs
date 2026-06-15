@@ -9,14 +9,14 @@ module.exports = {
     target: [
       { target: 'dmg', arch: ['arm64', 'x64'] }
     ],
-    icon: 'build/icon.icns',
+    icon: 'public/icon.icns',
     category: 'public.app-category.developer-tools'
   },
   win: {
     target: [
       { target: 'nsis', arch: ['x64'] }
     ],
-    icon: 'build/icon.ico'
+    icon: 'public/icon.ico'
   },
   nsis: {
     oneClick: false,
