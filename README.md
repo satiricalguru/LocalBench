@@ -35,9 +35,9 @@ Get the official installer for your operating system:
 
 | Platform | Download Link | Package Format | Architecture |
 | :--- | :--- | :--- | :--- |
-| 🍏 **macOS** | [**Download for Mac**](https://github.com/satiricalguru/LocalBench/releases/download/v1.0.0/localbench-1.0.0-arm64.dmg) | `.dmg` installer | Apple Silicon (M1/M2/M3) |
-| 📦 **macOS Portable** | [**Download ZIP**](https://github.com/satiricalguru/LocalBench/releases/download/v1.0.0/localbench-1.0.0-arm64-mac.zip) | `.zip` archive | Apple Silicon (M1/M2/M3) |
-| 🖥️ **Windows** | [**Download for Windows**](https://github.com/satiricalguru/LocalBench/releases/download/v1.0.0/localbench.Setup.1.0.0.exe) | `.exe` installer | ARM64 / x64 |
+| 🍏 **macOS (Apple Silicon)** | [**Download for Mac (ARM64)**](https://github.com/satiricalguru/LocalBench/releases/download/v1.0.0/LocalBench-1.0.0-arm64.dmg) | `.dmg` installer | Apple Silicon (M1/M2/M3/M4) |
+| 🍏 **macOS (Intel)** | [**Download for Mac (x64)**](https://github.com/satiricalguru/LocalBench/releases/download/v1.0.0/LocalBench-1.0.0.dmg) | `.dmg` installer | Intel Processors |
+| 🪟 **Windows** | [**Download for Windows**](https://github.com/satiricalguru/LocalBench/releases/download/v1.0.0/LocalBench.Setup.1.0.0.exe) | `.exe` installer | Intel x64 / ARM64 |
 
 ---
 
