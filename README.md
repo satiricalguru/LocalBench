@@ -1,10 +1,32 @@
-# ✨ LocalBench
+<h1 align="center">LocalBench ⚡</h1>
 
-> **The Professional Offline-First Local LLM Benchmark & Playground Tool**
+<p align="center">
+  <b>The Professional Offline-First Local LLM Benchmark & Playground Tool</b>
+</p>
 
-LocalBench is a premium, developer-centric developer tool for testing, comparing, and profiling Large Language Models locally. Designed to resolve the core friction points of local model evaluations—such as VRAM memory collisions, rigid scoring, and lack of cloud baselines—LocalBench offers a unified, polished interface built on **Electron**, **React**, **TypeScript**, and **TailwindCSS**.
+<p align="center">
+  The ultimate desktop application to evaluate, profile, and compare LLM execution speeds and reasoning scores on your own hardware.
+</p>
 
----
+<p align="center">
+  <a href="https://github.com/satiricalguru/LocalBench/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License MIT"></a>
+  <img src="https://img.shields.io/badge/Electron-31.0.0-blue.svg?logo=electron&logoColor=white" alt="Electron">
+  <img src="https://img.shields.io/badge/React-18.3.1-blue.svg?logo=react&logoColor=white" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-5.4.5-blue.svg?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/TailwindCSS-3.4.19-blue.svg?logo=tailwindcss&logoColor=white" alt="TailwindCSS">
+  <img src="https://img.shields.io/badge/SQLite-Local-orange.svg?logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/Ollama-Integrated-purple.svg" alt="Ollama">
+</p>
+
+<p align="center">
+  <a href="#-key-features">Features</a> · 
+  <a href="#-getting-started">Quick Start</a> · 
+  <a href="#%EF%B8%8F-tech-stack--architecture">Architecture</a> · 
+  <a href="#-packaging--release-builds">Packaging</a> · 
+  <a href="#-running-validation-tests">Testing</a>
+</p>
+
+<hr />
 
 ## 🚀 Key Features
 
