@@ -1,6 +1,9 @@
 module.exports = {
   appId: 'com.localbench.app',
   productName: 'LocalBench',
+  directories: {
+    output: 'release'
+  },
   files: ['dist/**/*', 'dist-electron/**/*'],
   mac: {
     target: [

@@ -6,9 +6,9 @@
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "node scripts/setup-dist-electron.mjs && tsc -p tsconfig.electron.json && concurrently \"vite\" \"tsc -p tsconfig.electron.json -w\" \"electron .\"",
-    "build": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder",
-    "build:mac": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder --mac",
-    "build:win": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder --win",
+    "build": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder -c electron-builder.config.cjs",
+    "build:mac": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder --mac -c electron-builder.config.cjs",
+    "build:win": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder --win -c electron-builder.config.cjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",

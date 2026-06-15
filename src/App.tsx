@@ -99,7 +99,7 @@ export default function App() {
         <div>
           {/* Logo */}
           <div className="h-16 px-6 flex items-center border-b border-border gap-2.5">
-            <img src="/icon.png" className="h-8 w-8 rounded-lg shadow-md shadow-primary/10 object-contain" alt="LocalBench logo" />
+            <img src="./icon.png" className="h-8 w-8 rounded-lg shadow-md shadow-primary/10 object-contain" alt="LocalBench logo" />
             <div>
               <h1 className="font-bold text-base tracking-tight leading-none">LocalBench</h1>
               <span className="text-[10px] font-semibold text-muted-foreground tracking-wide uppercase">Local LLM Testing</span>
