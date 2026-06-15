@@ -73,6 +73,14 @@ Evaluates response quality using flexible, layout-insensitive scoring algorithms
 - **Creative Writing**: Verifies syllable distributions and structural counts (e.g. Haiku checks).
 
 ---
+## 📷 Screenshots
+
+<img width="2916" height="1644" alt="image" src="https://github.com/user-attachments/assets/ccb7f172-b650-4ada-8c4e-211757519a97" />
+<img width="2906" height="1654" alt="image" src="https://github.com/user-attachments/assets/887d374a-3da5-4986-9211-814058c8bd28" />
+<img width="2914" height="1654" alt="image" src="https://github.com/user-attachments/assets/8a6cb68e-9813-4fa3-8f86-c9769d2f8fab" />
+
+
+---
 
 ## 🛠️ Tech Stack & Architecture
 
