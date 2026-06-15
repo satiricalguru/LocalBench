@@ -1,0 +1,52 @@
+{
+  "name": "localbench",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "node scripts/setup-dist-electron.mjs && tsc -p tsconfig.electron.json && concurrently \"vite\" \"tsc -p tsconfig.electron.json -w\" \"electron .\"",
+    "build": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder",
+    "build:mac": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder --mac",
+    "build:win": "vite build && tsc -p tsconfig.electron.json && node scripts/setup-dist-electron.mjs && electron-builder --win",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:e2e": "playwright test",
+    "postinstall": "electron-rebuild"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.101.0",
+    "better-sqlite3": "^12.10.0",
+    "lucide-react": "^1.18.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.8.1",
+    "systeminformation": "^5.31.7",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.60.0",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.12.3",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "concurrently": "^9.2.1",
+    "electron": "^31.0.0",
+    "electron-builder": "^26.15.3",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19",
+    "typescript": "5.4.5",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.12",
+    "vitest": "^4.1.8"
+  }
+}
