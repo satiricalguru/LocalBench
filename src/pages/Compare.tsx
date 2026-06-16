@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useProvidersStore } from '../store/providersStore';
-import { Scale, Plus, X, Cpu, Globe, HelpCircle, Check, AlertTriangle, ArrowUpRight, DollarSign, Activity, Award, Zap } from 'lucide-react';
+import { Scale, Plus, X, Cpu, HelpCircle, Activity, Award, Zap } from 'lucide-react';
 
 interface ModelComparisonData {
   id: string;
@@ -405,7 +405,9 @@ export default function Compare() {
                 <tr>
                   <td className="py-4 px-4 font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
                     Cost/1M Prompt
-                    <HelpCircle className="h-3 w-3 text-muted-foreground/60" title="Cost in USD per one million input tokens" />
+                    <span title="Cost in USD per one million input tokens">
+                      <HelpCircle className="h-3 w-3 text-muted-foreground/60" />
+                    </span>
                   </td>
                   {selectedModels.map(m => (
                     <td key={m.id} className="py-4 px-4 font-semibold">
@@ -421,7 +423,9 @@ export default function Compare() {
                 <tr>
                   <td className="py-4 px-4 font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
                     Cost/1M Completion
-                    <HelpCircle className="h-3 w-3 text-muted-foreground/60" title="Cost in USD per one million output tokens" />
+                    <span title="Cost in USD per one million output tokens">
+                      <HelpCircle className="h-3 w-3 text-muted-foreground/60" />
+                    </span>
                   </td>
                   {selectedModels.map(m => (
                     <td key={m.id} className="py-4 px-4 font-semibold">
@@ -448,7 +452,9 @@ export default function Compare() {
                 <tr>
                   <td className="py-4 px-4 font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
                     Avg. Quality Score
-                    <HelpCircle className="h-3 w-3 text-muted-foreground/60" title="Average accuracy across local benchmark runs" />
+                    <span title="Average accuracy across local benchmark runs">
+                      <HelpCircle className="h-3 w-3 text-muted-foreground/60" />
+                    </span>
                   </td>
                   {selectedModels.map(m => (
                     <td key={m.id} className="py-4 px-4 font-bold">
@@ -470,7 +476,9 @@ export default function Compare() {
                 <tr>
                   <td className="py-4 px-4 font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
                     Avg. Speed (TPS)
-                    <HelpCircle className="h-3 w-3 text-muted-foreground/60" title="Average throughput in tokens per second" />
+                    <span title="Average throughput in tokens per second">
+                      <HelpCircle className="h-3 w-3 text-muted-foreground/60" />
+                    </span>
                   </td>
                   {selectedModels.map(m => (
                     <td key={m.id} className="py-4 px-4 font-semibold">
@@ -489,7 +497,9 @@ export default function Compare() {
                 <tr>
                   <td className="py-4 px-4 font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
                     Avg. Latency (TTFT)
-                    <HelpCircle className="h-3 w-3 text-muted-foreground/60" title="Time to first token in milliseconds" />
+                    <span title="Time to first token in milliseconds">
+                      <HelpCircle className="h-3 w-3 text-muted-foreground/60" />
+                    </span>
                   </td>
                   {selectedModels.map(m => (
                     <td key={m.id} className="py-4 px-4">
