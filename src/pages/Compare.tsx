@@ -141,27 +141,7 @@ export default function Compare() {
     fetchLocalStats();
   }, [models]);
 
-  // Set default initial models for comparison
-  useEffect(() => {
-    if (selectedModels.length === 0) {
-      // Find a local model first
-      const defaultLocal = models.find(m => m.provider.toLowerCase() === 'ollama') || models[0];
-      const defaultCloud = openRouterModels.find(m => m.id === 'openai/gpt-4o') || openRouterModels[0];
-      
-      const newSelections: ModelComparisonData[] = [];
-      
-      if (defaultLocal) {
-        newSelections.push(convertLocalToCompare(defaultLocal));
-      }
-      if (defaultCloud) {
-        newSelections.push(convertCloudToCompare(defaultCloud));
-      }
 
-      if (newSelections.length > 0) {
-        setSelectedModels(newSelections);
-      }
-    }
-  }, [models, openRouterModels]);
 
   const convertLocalToCompare = (local: typeof models[0]): ModelComparisonData => {
     // Estimate parameters and memory needed

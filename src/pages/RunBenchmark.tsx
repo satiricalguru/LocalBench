@@ -82,13 +82,9 @@ export default function RunBenchmark({ onBenchmarkFinished }: RunBenchmarkProps)
 
   // Pre-select some common items on load
   useEffect(() => {
-    // Select first two models if available
-    if (models.length > 0) {
-      setSelectedModels(models.slice(0, 2).map(m => m.id));
-    }
     // Select speed, reasoning-apples, coding-palindrome by default
     setSelectedTasks(['speed-tps', 'reasoning-apples', 'coding-palindrome']);
-  }, [models]);
+  }, []);
 
   // Handle run success redirect — use lastCompletedRunId which is preserved after activeRunId is cleared
   useEffect(() => {
