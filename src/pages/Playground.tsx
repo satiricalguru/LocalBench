@@ -67,12 +67,7 @@ export default function Playground() {
   // Clean model name for headers
   const getCleanName = (id: string) => id.split('/').pop()?.split(':')?.[0] ?? id;
 
-  // Initialize selected models on mount
-  useEffect(() => {
-    if (models.length > 0 && selectedModels.length === 0) {
-      setSelectedModels([models[0].id]);
-    }
-  }, [models]);
+
 
   // Subscribe to playground token events
   useEffect(() => {
