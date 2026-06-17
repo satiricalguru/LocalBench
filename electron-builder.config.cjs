@@ -5,6 +5,10 @@ module.exports = {
     output: 'release'
   },
   files: ['dist/**/*', 'dist-electron/**/*'],
+  asar: true,
+  asarUnpack: [
+    '**/node_modules/better-sqlite3/**/*'
+  ],
   mac: {
     target: [
       { target: 'dmg', arch: ['arm64', 'x64'] }

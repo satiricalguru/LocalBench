@@ -20,7 +20,7 @@ function createWindow() {
     title: "LocalBench",
     icon: isDev
       ? path.join(__dirname, `../build/icon.${process.platform === 'darwin' ? 'icns' : process.platform === 'win32' ? 'ico' : 'png'}`)
-      : path.join(__dirname, `../dist/icon.${process.platform === 'darwin' ? 'icns' : process.platform === 'win32' ? 'ico' : 'png'}`),
+      : (process.platform === 'linux' ? path.join(__dirname, '../dist/icon.png') : undefined),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
